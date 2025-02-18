@@ -1,3 +1,9 @@
+# Sobre esta solução
+Esta solução é requisito para conclusão do curso de desenvolvimento da DIO. O desafio original é no .NET 6, portanto criei um novo projeto utilizando minimal APIs com o .NET 9.
+O desafio original, sem a solução, pode ser encontrado no repositório original de onde o fork foi feito.
+
+⚠ Se utilizar o swagger para testar os endpoints, lembre-se de susbstituir o valor do status por um inteiro. O Swagger irá recomendar uma string, mas haverá problema na deserialização. 
+
 # DIO - Trilha .NET - API e Entity Framework
 www.dio.me
 

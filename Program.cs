@@ -1,9 +1,9 @@
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
-using TrilhaApiDesafio.Context;
+using Desafio_API_Atualizado.Context;
+using Desafio_API_Atualizado.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddDbContext<OrganizadorContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
@@ -28,6 +28,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapTarefaEndpoints();
 
 app.Run();
